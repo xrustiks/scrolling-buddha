@@ -36,12 +36,28 @@ body {
   animation-range: 0 300vh;
 }
 
-/* Particles */
+/* Small particles */
 .layer-1 {
   animation-name: animation-1;
+  z-index: 4;
 }
 
 @keyframes animation-1 {
+  from {
+    scale: 1;
+  }
+  to {
+    scale: 1.5;
+  }
+}
+
+/* Big particles */
+.layer-2 {
+  animation-name: animation-2;
+  z-index: 3;
+}
+
+@keyframes animation-2 {
   from {
     scale: 1;
   }
@@ -51,11 +67,12 @@ body {
 }
 
 /* Main background */
-.layer-2 {
-  animation-name: animation-2;
+.layer-3 {
+  animation-name: animation-3;
+  z-index: 1;
 }
 
-@keyframes animation-2 {
+@keyframes animation-3 {
   from {
     scale: 1;
   }
@@ -65,42 +82,18 @@ body {
 }
 
 /* Buddha */
-.layer-3 {
-  animation-name: animation-3;
+.layer-4 {
+  animation-name: animation-4;
+  z-index: 2;
 }
 
-@keyframes animation-3 {
+@keyframes animation-4 {
   from {
     scale: 1;
   }
   to {
     scale: 1.6;
   }
-}
-
-/* @keyframes animation-3 {
-  from {
-    scale: 1;
-  }
-  to {
-    scale: 1.5;
-  }
-} */
-
-.layer-3 {
-  z-index: 4;
-}
-
-.layer-2 {
-  z-index: 3;
-}
-
-.layer-1 {
-  z-index: 100;
-}
-
-.layer-0 {
-  z-index: 1;
 }
 
 .layer-content {
