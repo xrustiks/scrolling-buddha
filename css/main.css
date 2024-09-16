@@ -10,12 +10,11 @@
 
 body {
   font-family: Arial, Helvetica, sans-serif;
-  color: brown;
   overflow-x: hidden;
 }
 
 .scene {
-  height: 600vh;
+  height: 1000vh;
 }
 
 .layer {
@@ -99,27 +98,27 @@ body {
 .layer-content {
   padding: 5hv 5vw;
 
-  backdrop-filter: blur(25px);
+  color: white;
   font-size: 2vh;
+
+  transform: translateY(420%);
 
   animation-timeline: scroll();
   animation-timing-function: linear;
   animation-fill-mode: both;
-  animation-range: 0 500vh;
+  animation-range: 0vh 1000vh;
 
   animation-name: animation-content;
 }
 
 @keyframes animation-content {
-  from {
-    opacity: 1;
-  }
   to {
     opacity: 0;
   }
 }
 
 .layer-final {
+  color: white;
   font-size: 2vh;
 
   opacity: 0;
@@ -131,6 +130,7 @@ body {
 @keyframes animation-end {
   to {
     opacity: 1;
+    z-index: 5;
   }
 }
 
