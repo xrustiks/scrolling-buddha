@@ -15,7 +15,7 @@ body {
 }
 
 .scene {
-  height: 500vh;
+  height: 600vh;
 }
 
 .layer {
@@ -33,13 +33,31 @@ body {
   animation-timeline: scroll();
   animation-timing-function: linear;
   animation-fill-mode: both;
-  animation-range: 0 300vh;
+  animation-range: 0 800vh;
 }
 
 /* Small particles */
 .layer-1 {
   animation-name: animation-1;
   z-index: 4;
+}
+
+/* Big particles */
+.layer-2 {
+  animation-name: animation-2;
+  z-index: 3;
+}
+
+/* Main background */
+.layer-3 {
+  animation-name: animation-3;
+  z-index: 1;
+}
+
+/* Buddha */
+.layer-4 {
+  animation-name: animation-4;
+  z-index: 2;
 }
 
 @keyframes animation-1 {
@@ -51,12 +69,6 @@ body {
   }
 }
 
-/* Big particles */
-.layer-2 {
-  animation-name: animation-2;
-  z-index: 3;
-}
-
 @keyframes animation-2 {
   from {
     scale: 1;
@@ -66,12 +78,6 @@ body {
   }
 }
 
-/* Main background */
-.layer-3 {
-  animation-name: animation-3;
-  z-index: 1;
-}
-
 @keyframes animation-3 {
   from {
     scale: 1;
@@ -79,12 +85,6 @@ body {
   to {
     scale: 1.3;
   }
-}
-
-/* Buddha */
-.layer-4 {
-  animation-name: animation-4;
-  z-index: 2;
 }
 
 @keyframes animation-4 {
@@ -97,10 +97,63 @@ body {
 }
 
 .layer-content {
-  border: 1px solid black;
   padding: 5hv 5vw;
 
   backdrop-filter: blur(25px);
+  font-size: 2vh;
+
+  animation-timeline: scroll();
+  animation-timing-function: linear;
+  animation-fill-mode: both;
+  animation-range: 0 500vh;
+
+  animation-name: animation-content;
 }
 
+@keyframes animation-content {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
 
+.layer-final {
+  font-size: 2vh;
+
+  opacity: 0;
+  animation-range: 100vh 400vh;
+
+  animation-name: animation-end;
+}
+
+@keyframes animation-end {
+  to {
+    opacity: 1;
+  }
+}
+
+.layer-final::before {
+  content: '';
+  background-color: black;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+
+  animation-timeline: scroll();
+  animation-timing-function: linear;
+  animation-fill-mode: both;
+  animation-range: 0vh 400vh;
+  animation-name: animation-bg;
+}
+
+@keyframes animation-bg {
+  to {
+    opacity: 1;
+  }
+}
+
+.layer-final h1 {
+  position: relative;
+}
