@@ -95,7 +95,7 @@ body {
   }
 }
 
-.layer-content {
+.layer-phrase-begin {
   padding: 5hv 5vw;
 
   color: white;
@@ -103,45 +103,44 @@ body {
 
   transform: translateY(420%);
 
+  opacity: 0;
+
+  animation-name: animation-phrase-begin;
   animation-timeline: scroll();
   animation-timing-function: linear;
   animation-fill-mode: both;
-  animation-range: 400vh 700vh;
-
-  animation-name: animation-content;
+  animation-range: 100vh 500vh;
 }
 
-@keyframes animation-content {
-  to {
+@keyframes animation-phrase-begin {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
     opacity: 0;
   }
 }
 
-.layer-final {
+.layer-blackout {
   color: white;
   font-size: 2vh;
 
   opacity: 0;
-  animation-range: 700vh 900vh;
 
-  animation-name: animation-end;
+  animation-name: animation-blackout;
+  animation-range: 700vh 900vh;
 }
 
-@keyframes animation-end {
+@keyframes animation-blackout {
   to {
     opacity: 1;
     z-index: 5;
+    background-color: black;
   }
-}
-
-.layer-final::before {
-  content: '';
-  background-color: black;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-}
-
-.layer-final h1 {
-  position: relative;
 }
