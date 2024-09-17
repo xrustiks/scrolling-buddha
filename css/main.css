@@ -29,7 +29,6 @@ body {
   animation-timeline: scroll();
   animation-timing-function: ease;
   animation-fill-mode: both;
-  animation-range: 0 2000vh;
 }
 
 /* Small particles */
@@ -76,7 +75,7 @@ body {
     scale: 1;
   }
   to {
-    scale: 1.3;
+    scale: 1.5;
   }
 }
 
@@ -92,7 +91,7 @@ body {
     scale: 1;
   }
   to {
-    scale: 1.6;
+    scale: 2;
   }
 }
 
@@ -125,10 +124,12 @@ body {
   }
 }
 
-.layer-blackout {
+.layer-phrase-final {
   color: white;
   font-size: 2vh;
+}
 
+.layer-blackout {
   animation-name: animation-blackout;
   animation-range: 1100vh 1700vh;
 }
