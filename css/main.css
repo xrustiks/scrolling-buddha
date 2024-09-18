@@ -10,6 +10,31 @@ body {
   overflow-x: hidden;
 }
 
+/* Label that tells a user that they should scroll down or swipe */
+.instruction-label {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 0;
+
+  padding: 10px 20px;
+
+  color: rgb(105, 105, 105);
+  z-index: 100;
+
+  animation-name: animation-instruction-label;
+  animation-timeline: scroll();
+  animation-timing-function: ease;
+  animation-fill-mode: both;
+  animation-range: 0vh 300vh;
+}
+
+@keyframes animation-instruction-label {
+  to {
+    opacity: 0;
+  }
+}
+
 .scene {
   height: 2000vh;
 }
@@ -30,32 +55,6 @@ body {
   animation-timing-function: ease;
   animation-fill-mode: both;
   animation-range: 0vh 2000vh;
-}
-
-.instruction-label {
-  position: fixed;
-  left: 0;
-  top: 0;
-
-  padding: 10px 20px;
-
-  color: silver;
-  z-index: 100;
-
-  animation-timeline: scroll();
-  animation-timing-function: ease;
-  animation-fill-mode: both;
-  animation-range: 50vh 300vh;
-
-  animation-name: animation-instruction-label;
-}
-
-
-
-@keyframes animation-instruction-label {
-  to {
-    opacity: 0;
-  }
 }
 
 /* Small particles */
