@@ -2,4 +2,12 @@
   * {
     font-size: 16px;
   }
+
+  .layer-phrase-begin {
+    transform: translateY(620%);
+  }
+
+  .instruction-label {
+    font-size: 1.75vh;
+  }
 }
