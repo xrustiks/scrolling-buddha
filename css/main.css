@@ -29,6 +29,33 @@ body {
   animation-timeline: scroll();
   animation-timing-function: ease;
   animation-fill-mode: both;
+  animation-range: 0vh 2000vh;
+}
+
+.instruction-label {
+  position: fixed;
+  left: 0;
+  top: 0;
+
+  padding: 10px 20px;
+
+  color: silver;
+  z-index: 100;
+
+  animation-timeline: scroll();
+  animation-timing-function: ease;
+  animation-fill-mode: both;
+  animation-range: 50vh 300vh;
+
+  animation-name: animation-instruction-label;
+}
+
+
+
+@keyframes animation-instruction-label {
+  to {
+    opacity: 0;
+  }
 }
 
 /* Small particles */
@@ -131,7 +158,7 @@ body {
 
 .layer-blackout {
   animation-name: animation-blackout;
-  animation-range: 1100vh 1700vh;
+  animation-range: 1100vh 2000vh;
 }
 
 @keyframes animation-blackout {
