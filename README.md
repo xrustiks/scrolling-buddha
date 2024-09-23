@@ -1,5 +1,5 @@
 **Scrolling Buddha** is a place where you can find answer for the question "When to start improve yourself?"
-Just scroll down deeper and deeper, and you will see an answer (or swipe down, if you use mobile device).
+Just scroll down deeper and deeper, and you will see an answer (or swipe, if you use mobile device).
 
 Implemented using only HTML + CSS.
 
