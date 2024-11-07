@@ -3,4 +3,9 @@ Just scroll down deeper and deeper, and you will see an answer (or swipe, if you
 
 Implemented using only HTML + CSS.
 
-(the app doesn't work on Firefox browser. **animation-timeline** feature isn't supported by default. But you can turn it on: in address bar, write *about:config* > *layout.css.scroll-driven-animations.enabled*)
+The app doesn't work on Firefox browser. **animation-timeline** feature isn't supported by default. 
+But you can turn it on: in address bar, write: 
+1. *about:config*
+2. *Acce[t all ristks*
+3. *layout.css.scroll-driven-animations.enabled*
+4. Enjoy.
