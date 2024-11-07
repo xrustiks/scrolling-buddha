@@ -6,6 +6,6 @@ Implemented using only HTML + CSS.
 The app doesn't work on Firefox browser. **animation-timeline** feature isn't supported by default. 
 But you can turn it on: in address bar, write: 
 1. *about:config*
-2. *Acce[t all ristks*
+2. *Accept all ristks*
 3. *layout.css.scroll-driven-animations.enabled*
 4. Enjoy.
