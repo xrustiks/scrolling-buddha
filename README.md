@@ -8,4 +8,3 @@ But you can turn it on: in address bar, write:
 1. *about:config*
 2. *Accept all ristks*
 3. *layout.css.scroll-driven-animations.enabled*
-4. Enjoy.
